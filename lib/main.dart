@@ -47,6 +47,11 @@ class _MyHomePageState extends State<MyHomePage> {
                 bottomRight: Radius.circular(50)
               ),
               color: Color(0xFF363f93),
+              boxShadow: [
+                BoxShadow(
+                  // TODO
+                )
+              ]
             ),
             child: Stack( // コンテナの上に子要素として載せるイメージ
               children: [
@@ -143,10 +148,87 @@ class _MyHomePageState extends State<MyHomePage> {
 
               ],
             ),
+          ),
+
+          Expanded(
+              child: MediaQuery.removePadding(context: context, removeTop: true,
+              child: ListView(
+                children: [
+                  Container(
+                  margin: const EdgeInsets.only(bottom: 10, top: 25),
+                  height: 200,
+                  padding: const EdgeInsets.only(left: 20, right: 20, bottom: 20),
+                  child: Container(
+                    decoration: BoxDecoration(
+                      color: Color(0xFf363f93),
+                      borderRadius: const BorderRadius.only(bottomLeft: Radius.circular(80.0)),
+                      boxShadow: [
+                        BoxShadow(
+                            color: Color(0xFF363f93).withOpacity(0.3),
+                            offset: const Offset(-10.0, 0.0),
+                            blurRadius: 20.0,
+                            spreadRadius: 4.0),
+                      ],
+                    ),
+                    padding: const EdgeInsets.only(left: 32, top: 50.0, bottom: 50),
+                    child: Column(
+                      crossAxisAlignment: CrossAxisAlignment.start,
+                      children: const <Widget>[
+                        Text("THE BEST", style: TextStyle(color: Colors.white, fontSize: 12),
+                        ),
+                        SizedBox(
+                          height: 2,
+                        ),
+                        Text(
+                          "Your life starts here",
+                          style: TextStyle(
+                            color: Colors.white,
+                            fontSize: 22,
+                            fontWeight: FontWeight.bold),
+                          ),
+                      ]
+                    ),
+                  ),
+                ),
+                  Container(
+                  margin: const EdgeInsets.only(bottom: 10, top: 25),
+                  height: 200,
+                  padding: const EdgeInsets.only(left: 20, right: 20, bottom: 20),
+                  child: Container(
+                    decoration: BoxDecoration(
+                      color: Color(0xFf363f93),
+                      borderRadius: const BorderRadius.only(topRight: Radius.circular(80.0)),
+                      boxShadow: [
+                        BoxShadow(
+                            color: Color(0xFF363f93).withOpacity(0.3),
+                            offset: const Offset(-10.0, 0.0),
+                            blurRadius: 20.0,
+                            spreadRadius: 4.0),
+                      ],
+                    ),
+                    padding: const EdgeInsets.only(left: 32, top: 50.0, bottom: 50),
+                    child: Column(
+                        crossAxisAlignment: CrossAxisAlignment.start,
+                        children: const <Widget>[
+                          Text("THE BEST", style: TextStyle(color: Colors.white, fontSize: 12),
+                          ),
+                          SizedBox(
+                            height: 2,
+                          ),
+                          Text(
+                            "Your life starts here",
+                            style: TextStyle(
+                                color: Colors.white,
+                                fontSize: 22,
+                                fontWeight: FontWeight.bold),
+                          ),
+                        ]
+                    ),
+                  ),
+                ),
+              ],
+            ))
           )
-
-
-
         ],
       )
     );
