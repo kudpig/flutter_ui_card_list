@@ -1,16 +1,11 @@
 # flutter_ui_card_list
 
-A new Flutter project.
+レイアウト作成の練習
 
-## Getting Started
+## プレビュー
 
-This project is a starting point for a Flutter application.
+<img src="https://user-images.githubusercontent.com/62790209/157684061-34fc90ab-b50c-483c-82a5-9ca3c54aa6d6.png" width="400">
 
-A few resources to get you started if this is your first Flutter project:
+### 参考動画(youtube)
 
-- [Lab: Write your first Flutter app](https://flutter.dev/docs/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://flutter.dev/docs/cookbook)
-
-For help getting started with Flutter, view our
-[online documentation](https://flutter.dev/docs), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+[Flutter Card UI | Flutter Listview | Flutter Card Widget | Flutter UI Design | Scrollable Listview](https://www.youtube.com/watch?v=ZMg_syAIoVo)
